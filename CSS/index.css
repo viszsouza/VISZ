@@ -485,3 +485,173 @@ header {
 .carousel-indicator span.active {
     background: var(--vermelhoPadrao);
 }
+
+/* Como funciona o método */
+
+.como-funciona{
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0)),
+        linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0)),
+        url('/IMG/HeaderBackground.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 40px 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.como-funciona-img{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.como-funciona-img h1 {
+    font-family: "TAM", sans-serif;
+    color: var(--branco);
+    font-weight: 900;
+    font-size: 30px;
+    text-align: start;
+    width: 500px;
+    text-transform: uppercase;
+}
+
+.como-funciona-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.como-funciona-text {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.como-funciona-text h3 {
+    font-family: "TAM", sans-serif;
+    color: var(--vermelhoPadrao);
+    font-weight: 900;
+    font-size: 30px;
+    text-align: start;
+    width: 500px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px var(--preto);
+}
+
+.como-funciona-text img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.como-funciona-text  .como-funciona-item p {
+    font-family: "Montserrat", sans-serif;
+    color: var(--branco);
+    font-weight: 300;
+    font-size: 18px;
+    font-style: normal;
+    text-align: start;
+    width: 500px;
+    text-shadow: 1px 1px 15px var(--preto);
+}
+
+.como-funciona-text p{
+    font-family: "Montserrat", sans-serif;
+    color: var(--vermelhoPadrao);
+    font-weight: 300;
+    font-size: 18px;
+    font-style: italic;
+    text-align: start;
+    width: 500px;
+    text-shadow: 1px 1px 15px var(--preto);
+}
+
+.como-funciona-text p span{
+    background: var(--gradienteVermelho);
+    color: var(--branco);
+    font-weight: 600;
+}
+
+/* Who */
+
+.who{
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
+        linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
+        url('/IMG/BackgroundProblem.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 40px 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.who h1 {
+    font-family: "TAM", sans-serif;
+    color: var(--branco);
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.container-who {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 40px;
+}
+
+.who-item{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 40px;
+    max-width: 300px;
+    height: 300px;
+    background: var(--gradienteVermelho);
+    box-shadow: var(--shadowVermelha);
+}
+
+.who-persona{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 300px;
+    color: var(--branco);
+}
+
+.who-persona h3 {
+    font-family: "TAM", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.who-item p {
+    font-family: "Montserrat", sans-serif;
+    color: var(--branco);
+    font-weight: 300;
+    font-size: 16px;
+    text-align: start;
+}
+
+.who-persona img {
+    width: 100%;
+    max-width: 50px;
+    border-radius: 100%;
+}

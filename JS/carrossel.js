@@ -65,14 +65,6 @@ function nextSlide() {
 let autoplay = setInterval(nextSlide, 3000);
 
 // --------------------
-// PAUSAR NO HOVER (PRO)
-// --------------------
-carousel.addEventListener("mouseenter", () => clearInterval(autoplay));
-carousel.addEventListener("mouseleave", () => {
-    autoplay = setInterval(nextSlide, 3000);
-});
-
-// --------------------
 // OBSERVER PARA DRAG MANUAL
 // --------------------
 const observer = new IntersectionObserver(entries => {
