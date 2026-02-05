@@ -8,4 +8,4 @@ const intervalo = setInterval(() => {
     if (numero > max) {
         clearInterval(intervalo);
     }
-}, 30);
+}, 50);

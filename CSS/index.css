@@ -1,8 +1,8 @@
 @import url("base.css");
 
 /* Inicio */
-header{
-    background-image: url('/IMG/HeaderBackground.jpg');
+header {
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 0, 0, 0)), url('/IMG/HeaderBackground.jpg');
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
@@ -11,15 +11,13 @@ header{
     object-fit: cover;
 }
 
-.container-header{
+.container-header {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container-inicio{
-    position: relative;
-    width: 100%;
+.container-inicio {
     height: 600px;
     display: flex;
     align-items: start;
@@ -27,30 +25,36 @@ header{
     flex-direction: column;
     gap: 40px;
     color: var(--branco);
-
-    animation: fadeUP linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
 }
 
-.header-elements img{
+.header-elements img {
     width: 100%;
-    max-height: 1000px;
-    
-    animation: fadeUP linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    max-height: 700px;
+    animation: moving 3s ease-in-out infinite;
 }
 
-.container-inicio-text{
+@keyframes moving {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(1deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+.container-inicio-text {
     display: flex;
     align-items: start;
     flex-direction: column;
-    margin-left: 50px;
     gap: 20px;
 }
 
-.container-inicio h1{
+.container-inicio h1 {
     font-family: "TAM", sans-serif;
     font-weight: 900;
     font-size: 40px;
@@ -60,11 +64,11 @@ header{
     text-shadow: 1px 1px 15px var(--preto);
 }
 
-.container-inicio h1 span{
+.container-inicio h1 span {
     color: var(--vermelhoPadrao);
 }
 
-.container-inicio p{
+.container-inicio p {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -76,7 +80,7 @@ header{
     padding-left: 30px;
 }
 
-.container-inicio-button button{
+.container-inicio-button button {
     padding: 10px 20px;
     background: var(--gradienteVermelho);
     color: var(--branco);
@@ -87,26 +91,397 @@ header{
     border: none;
     border-radius: 5px;
     box-shadow: var(--shadow);
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 
-    margin-left: 50px;
     transition: 300ms;
 }
 
-.container-inicio-button img{
+.container-inicio-button img {
     width: 30px;
 }
 
-.container-inicio-button button:hover{
+.container-inicio-button button:hover {
     transform: scale(0.95);
 }
 
 /* O Problema */
-.problem{
+.problem {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
+        linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
+        url('/IMG/BackgroundProblem.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     padding: 40px 80px;
-    height: 100vh;
+}
+
+.problem h1 {
+    font-family: "TAM", sans-serif;
+    color: var(--branco);
+    font-weight: 900;
+    font-size: 40px;
+    text-align: start;
+    width: 600px;
+    text-transform: uppercase;
+}
+
+.container-problem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.problem-elements img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    animation: moving 3s ease-in-out infinite;
+}
+
+.problem-text {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.problem-text h1 {
+    font-family: "TAM", sans-serif;
+    color: var(--vermelhoPadrao);
+    font-weight: 900;
+    font-size: 30px;
+    text-align: start;
+    width: 500px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px var(--preto);
+}
+
+.problem-text p {
+    font-family: "Montserrat", sans-serif;
+    color: var(--vermelhoPadrao);
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-style: italic;
+
+    text-align: start;
+    width: 500px;
+    text-shadow: 1px 1px 15px var(--preto);
+}
+
+.problem-text div p {
+    font-family: "Montserrat", sans-serif;
+    color: var(--branco);
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: none;
+    text-align: start;
+    width: 500px;
+    text-shadow: 1px 1px 15px var(--preto);
+}
+
+.problem-text p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.problem-text p img {
+    width: 20px;
+}
+
+/* A Solução */
+
+.soluctions {
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0)),
+        linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0)),
+        url('/IMG/HeaderBackground.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 40px 80px;
+}
+
+.soluctions h1 {
+    font-family: "TAM", sans-serif;
+    color: var(--branco);
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.soluctions p {
+    font-family: "Montserrat", sans-serif;
+    color: var(--branco);
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.container-soluctions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.item-soluctions {
+    background: var(--branco);
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: var(--shadowVermelha);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 20px;
+    transition: 300ms;
+}
+
+.item-soluctions:hover {
+    transform: scale(1.05) rotate(1deg);
+}
+
+.item-soluctions img {
+    width: 100px;
+    background: var(--gradienteVermelho);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.item-soluctions h1 {
+    font-family: "TAM", sans-serif;
+    color: var(--preto);
+    font-weight: 900;
+    font-size: 25px;
+    text-align: start;
+    text-transform: uppercase;
+}
+
+.item-soluctions p {
+    font-family: "Montserrat", sans-serif;
+    color: var(--preto);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: start;
+    margin-bottom: 0px;
+}
+
+.soluctions-cta {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.soluctions-cta p {
+    font-family: "Montserrat", sans-serif;
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.soluctions-cta button {
+    padding: 15px 30px;
+    background: var(--gradienteVermelho);
+    color: var(--branco);
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    transition: 300ms;
+}
+
+.soluctions-cta button:hover {
+    transform: scale(0.95);
+}
+
+.soluctions-cta button img {
+    width: 30px;
+}
+
+/* Aprender */
+
+.aprender {
+    background: var(--preto);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 40px 80px;
+}
+
+.aprender h1 {
+    font-family: "TAM", sans-serif;
+    color: var(--branco);
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.carousel-fade {
+    position: relative;
+}
+
+/* fade base */
+.carousel-fade::before,
+.carousel-fade::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+/* esquerda */
+.carousel-fade::before {
+    left: 0;
+    background: linear-gradient(to right, #000 0%, transparent 100%);
+    backdrop-filter: blur(8px);
+}
+
+/* direita */
+.carousel-fade::after {
+    right: 0;
+    background: linear-gradient(to left, #000 0%, transparent 100%);
+    backdrop-filter: blur(8px);
+}
+
+/* ESCONDER nas bordas */
+.carousel-fade.hide-left::before {
+    opacity: 0;
+}
+
+.carousel-fade.hide-right::after {
+    opacity: 0;
+}
+
+.carousel-fade::before,
+.carousel-fade::after {
+    backdrop-filter: blur(8px);
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    scrollbar-width: none;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding: 50%;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    min-width: 260px;
+    height: 360px;
+    background: #111;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: center;
+    transition: 0.4s ease;
+    flex-shrink: 0;
+}
+
+.card.active {
+    min-width: 320px;
+    height: 420px;
+}
+
+.card img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.tag {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.card h3 {
+    font-family: 'TAM', sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.card p {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    color: #ddd;
+    font-size: 12px;
+}
+
+.carousel-indicator {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.carousel-indicator span {
+    width: 30px;
+    height: 4px;
+    background: #ccc;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.carousel-indicator span.active {
+    background: var(--vermelhoPadrao);
 }
