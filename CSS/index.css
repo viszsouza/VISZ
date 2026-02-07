@@ -7,8 +7,8 @@ header {
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
-
     padding: 40px 80px;
+
     object-fit: cover;
 }
 
@@ -16,6 +16,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 40px 80px;
 }
 
 .container-inicio {
@@ -165,6 +166,10 @@ header {
     text-shadow: 1px 1px 15px var(--preto);
 }
 
+.itens-problem {
+    width: 100%;
+}
+
 .problem-text p {
     font-family: "Montserrat", sans-serif;
     color: var(--vermelhoPadrao);
@@ -174,29 +179,30 @@ header {
     font-style: italic;
 
     text-align: start;
-    width: 500px;
+    width: 100%;
     text-shadow: 1px 1px 15px var(--preto);
 }
 
-.problem-text div p {
+.problema p {
     font-family: "Montserrat", sans-serif;
     color: var(--branco);
     font-weight: 300;
     font-size: 18px;
     text-transform: none;
     text-align: start;
-    width: 500px;
+    width: 100%;
+    margin-bottom: 10px;
     text-shadow: 1px 1px 15px var(--preto);
 }
 
-.problem-text p {
+.problema {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 10px;
+    width: 100%;
 }
 
-.problem-text p img {
+.problema img {
     width: 20px;
 }
 
@@ -402,11 +408,12 @@ header {
 
 .carousel {
     display: flex;
-    gap: 20px;
+    gap: clamp(10px, 2vw, 20px);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    padding: 20px;
+    padding: 20px clamp(10px, 5vw, 80px);
     scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
 
     scroll-snap-type: x mandatory;
     scroll-padding: 50%;
@@ -417,8 +424,10 @@ header {
 }
 
 .card {
-    min-width: 260px;
-    height: 360px;
+    flex: 0 0 auto;
+    width: clamp(220px, 60vw, 320px);
+    /* RESPONSIVO */
+    height: clamp(300px, 70vw, 420px);
     background: #111;
     border-radius: 20px;
     position: relative;
@@ -429,13 +438,13 @@ header {
 }
 
 .card.active {
-    min-width: 320px;
-    height: 420px;
+    transform: scale(1.1);
+    transition: 0.4s ease;
 }
 
 .card img {
     width: 100%;
-    max-height: 100%;
+    height: 100%;
     object-fit: cover;
     filter: brightness(0.7);
 }
@@ -563,7 +572,6 @@ header {
     font-size: 18px;
     font-style: normal;
     text-align: start;
-    width: 500px;
     text-shadow: 1px 1px 15px var(--preto);
 }
 
@@ -574,7 +582,6 @@ header {
     font-size: 18px;
     font-style: italic;
     text-align: start;
-    width: 500px;
     text-shadow: 1px 1px 15px var(--preto);
 }
 
@@ -582,6 +589,11 @@ header {
     background: var(--gradienteVermelho);
     color: var(--branco);
     font-weight: 600;
+}
+
+.semana {
+    display: flex;
+    align-items: center;
 }
 
 /* Who */
@@ -748,7 +760,7 @@ header {
     }
 
     .container-inicio {
-        margin-top: 40px;
+        margin-top: 100px;
         height: auto;
         gap: 20px;
     }
@@ -781,17 +793,22 @@ header {
         gap: 20px;
     }
 
+    .problem-text {
+        width: 100%;
+    }
+
     .problem-text h1 {
         width: 100%;
         font-size: 20px;
         text-align: center;
     }
 
-    .problem-text p {
+    .problema p {
         width: 100%;
         font-size: 16px;
-        text-align: center;
+        text-align: start;
     }
+
 
     /* A Solução */
 
@@ -844,7 +861,7 @@ header {
         text-align: center;
     }
 
-    .como-funciona-text{
+    .como-funciona-text {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -861,6 +878,11 @@ header {
         width: 100%;
         font-size: 16px;
         text-align: center;
+    }
+
+    .semana {
+        display: flex;
+        align-items: center;
     }
 
     /* Who */
@@ -902,5 +924,15 @@ header {
     .carousel-fade::after {
         display: none;
     }
-}
 
+    .card {
+        min-width: none;
+        height: 300px;
+    }
+
+    .card.active {
+        transform: scale(1);
+        /* remove zoom no celular */
+    }
+
+}
