@@ -16,10 +16,11 @@
 
     <!-- Link's -->
     <link rel="stylesheet" href="CSS/index.css">
-    <script src="JS/scripts.js" defer></script>
 
     <script src="JS/contador.js" defer></script>
     <script src="JS/carrossel.js" defer></script>
+    <script src="JS/hamburger.js" defer></script>
+    <script src="JS/animacoes.js" defer></script>
 </head>
 
 <body>
@@ -50,10 +51,12 @@
 
         <div class="container-header">
 
-            <div class="container-inicio">
-                <div class="container-inicio-text">
-                    <h1>Coloque seu negócio no digital em apenas <span><span id="contador">0</span> dias</span></h1>
-                    <p>Um método simples, prático e testado para transformar sua presença online em um canal real de
+            <div class="container-inicio hidden2">
+                <div class="container-inicio-text hidden2">
+                    <h1 class="hidden2">Coloque seu negócio no digital em apenas <span><span id="contador">0</span>
+                            dias</span></h1>
+                    <p class="hidden2">Um método simples, prático e testado para transformar sua presença online em um
+                        canal real de
                         vendas.</p>
                 </div>
 
@@ -65,7 +68,7 @@
             </div>
 
             <div class="header-elements">
-                <img src="IMG/HeaderElements.png" alt="Elementos do Header">
+                <img src="IMG/HeaderElements.png" alt="Elementos do Header" class="hidden2">
             </div>
 
         </div>
@@ -78,21 +81,25 @@
         <div class="container-problem">
             <div class="problem-elements">
                 <h1>O problema!</h1>
-                <img src="IMG/Problema.png" alt="Imagem do problema">
+                <img src="IMG/Problema.png" alt="Imagem do problema" class="hidden2">
             </div>
 
-            <div class="problem-text">
+            <div class="problem-text hidden">
                 <h1>Você já percebeu que:</h1>
 
-                <div>
-                    <p><img src="IMG/exclamation.png" alt="Imagem de uma excalmação">Seu negócio depende só de indicação
+                <div class="itens-problem">
+                    <p class="hidden"><img src="IMG/exclamation.png" alt="Imagem de uma excalmação">Seu negócio depende
+                        só de indicação
                     </p>
-                    <p><img src="IMG/exclamation.png" alt="Imagem de uma excalmação">Seu Instagram não gera vendas</p>
-                    <p><img src="IMG/exclamation.png" alt="Imagem de uma excalmação">Você não tem um site profissional
+                    <p class="hidden"><img src="IMG/exclamation.png" alt="Imagem de uma excalmação">Seu Instagram não
+                        gera vendas</p>
+                    <p class="hidden"><img src="IMG/exclamation.png" alt="Imagem de uma excalmação">Você não tem um site
+                        profissional
                     </p>
-                    <p><img src="IMG/exclamation.png" alt="Imagem de uma excalmação">Seus concorrentes estão na sua
-                        frente</p>
-                    <p><img src="IMG/exclamation.png" alt="Imagem de uma excalmação">Parece que todo mundo vende, menos
+                    <p class="hidden"><img src="IMG/exclamation.png" alt="Imagem de uma excalmação">Seus concorrentes
+                        estão na sua frente</p>
+                    <p class="hidden"><img src="IMG/exclamation.png" alt="Imagem de uma excalmação">Parece que todo
+                        mundo vende, menos
                         você</p>
                 </div>
 
@@ -107,21 +114,21 @@
         <h1>A Solução</h1>
         <p>O E-book Seu Negócio no Digital em 30 Dias te mostra exatamente:</p>
 
-        <div class="container-soluctions">
+        <div class="container-soluctions hidden2">
 
-            <div class="item-soluctions">
+            <div class="item-soluctions hidden2">
                 <img src="IMG/questao-da-lampada.png" alt="Imagem de uma lâmpada com uma interrogação">
                 <h1>O que fazer</h1>
                 <p>Os primeiros passos para estruturar sua presença online.</p>
             </div>
 
-            <div class="item-soluctions">
+            <div class="item-soluctions hidden2">
                 <img src="IMG/despertador.png" alt="Imagem de um despertador">
                 <h1>Quando fazer</h1>
                 <p>Um plano diário de 30 dias com prioridades claras para facilitar a execução.</p>
             </div>
 
-            <div class="item-soluctions">
+            <div class="item-soluctions hidden2">
                 <img src="IMG/cerebro-meia-lampada.png" alt="Imagem de um cérebro com uma lâmpada">
                 <h1>Como fazer</h1>
                 <p>Explicações práticas sobre sites, conteúdo, tráfego e conversão, mesmo sem conhecimento técnico.</p>
@@ -217,14 +224,14 @@
 
     <section class="como-funciona">
 
-        <div class="como-funciona-img">
+        <div class="como-funciona-img hidden2">
             <h1>Como funciona o método</h1>
             <img src="IMG/FuncionaElements.jpg" alt="Imagem de elementos do método VISZ">
         </div>
 
         <div class="como-funciona-text">
 
-            <div class="como-funciona-item">
+            <div class="como-funciona-item hidden">
                 <h3>
                     <img src="IMG/calendar-week.png" alt="Imagem de um calendário">
                     Semana 1
@@ -232,7 +239,7 @@
                 <p>Fundamentos, clareza e posicionamento</p>
             </div>
 
-            <div class="como-funciona-item">
+            <div class="como-funciona-item hidden">
                 <h3>
                     <img src="IMG/calendar-week.png" alt="Imagem de um calendário">
                     Semana 2
@@ -240,7 +247,7 @@
                 <p>Estrutura digital que vende</p>
             </div>
 
-            <div class="como-funciona-item">
+            <div class="como-funciona-item hidden">
                 <h3>
                     <img src="IMG/calendar-week.png" alt="Imagem de um calendário">
                     Semana 3
@@ -248,7 +255,7 @@
                 <p>Conteúdo, prova social e autoridade</p>
             </div>
 
-            <div class="como-funciona-item">
+            <div class="como-funciona-item hidden">
                 <h3>
                     <img src="IMG/calendar-week.png" alt="Imagem de um calendário">
                     Semana 4
@@ -274,7 +281,7 @@
 
         <div class="container-who">
 
-            <div class="who-item">
+            <div class="who-item hidden2">
 
                 <div class="who-persona">
                     <img src="IMG/Personas/SeuJose.jpg" alt="Imagem do Seu José">
@@ -285,11 +292,12 @@
                     </div>
                 </div>
 
-                <p>"Eu não sabia por onde começar no digital. Depois do e-book, entendi exatamente os primeiros passos e montei minha presença online sem complicação."</p>
+                <p>"Eu não sabia por onde começar no digital. Depois do e-book, entendi exatamente os primeiros passos e
+                    montei minha presença online sem complicação."</p>
 
             </div>
 
-            <div class="who-item">
+            <div class="who-item hidden2">
 
                 <div class="who-persona">
                     <img src="IMG/Personas/Mariana Silva.jpg" alt="Imagem da Mariana Silva">
@@ -300,11 +308,12 @@
                     </div>
                 </div>
 
-                <p>"Minha loja só vendia por indicação. Com o método de 30 dias, comecei a receber mensagens pelo Instagram e WhatsApp todos os dias."</p>
+                <p>"Minha loja só vendia por indicação. Com o método de 30 dias, comecei a receber mensagens pelo
+                    Instagram e WhatsApp todos os dias."</p>
 
             </div>
 
-            <div class="who-item">
+            <div class="who-item hidden2">
 
                 <div class="who-persona">
                     <img src="IMG/Personas/Carlos Henrique.jpg" alt="Imagem do Carlos Henrique">
@@ -315,11 +324,12 @@
                     </div>
                 </div>
 
-                <p>"Eu até tinha Instagram, mas não gerava clientes. O e-book me mostrou como organizar tudo e transformar seguidores em orçamento."</p>
+                <p>"Eu até tinha Instagram, mas não gerava clientes. O e-book me mostrou como organizar tudo e
+                    transformar seguidores em orçamento."</p>
 
             </div>
 
-            <div class="who-item">
+            <div class="who-item hidden2">
 
                 <div class="who-persona">
                     <img src="IMG/Personas/Ana Paula Ribeiro.jpg" alt="Imagem da Ana Paula Ribeiro">
@@ -330,11 +340,12 @@
                     </div>
                 </div>
 
-                <p>"Sempre achei que digital era complicado e caro. Com o guia, percebi que dá pra começar simples e crescer com estratégia."</p>
+                <p>"Sempre achei que digital era complicado e caro. Com o guia, percebi que dá pra começar simples e
+                    crescer com estratégia."</p>
 
             </div>
 
-            <div class="who-item">
+            <div class="who-item hidden2">
 
                 <div class="who-persona">
                     <img src="IMG/Personas/Rafael Lima.jpg" alt="Imagem do Rafael Lima">
@@ -345,7 +356,8 @@
                     </div>
                 </div>
 
-                <p>"Depois de aplicar o plano, minha imagem ficou muito mais profissional e comecei a fechar mais contratos online."</p>
+                <p>"Depois de aplicar o plano, minha imagem ficou muito mais profissional e comecei a fechar mais
+                    contratos online."</p>
 
             </div>
 
@@ -354,11 +366,63 @@
 
     </section>
 
-    <!-- Footer -->
-    
-    <footer>
-        
-    </footer>
+    <!-- CTA / Footer-->
+
+    <section class="cta-footer">
+
+        <section class="cta hidden2">
+            <h1 class="hidden2">Pronto para colocar seu negócio no digital?</h1>
+            <p class="hidden2">Um método simples, prático e testado para transformar sua presença online em um canal
+                real de vendas.</p>
+
+            <a href="https://wa.me/5581985742601?text=Ol%C3%A1!%20Vi%20o%20site%20da%20VISZ.dev%20e%20quero%20saber%20mais%20sobre%20como%20funciona%20a%20cria%C3%A7%C3%A3o%20de%20sites."
+                target="_blank"><button>Quero o E-book<img src="IMG/arrow-circle-right.png"
+                        alt="Imagem de uma Seta"></button></a>
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+            <!-- Primeira parte -->
+            <section class="footer-sec">
+                <div class="footer-content">
+                    <h3 class="footer-h3">Contato</h3>
+
+                    <div>
+                        <p class="footer-info">Instagram: @visz.dev</p>
+                        <p class="footer-info">WhatsApp: (81) 9 8574-2601</p>
+                        <p class="footer-info">E-mail: contatoviszdev@gmail.com</p>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <h3 class="footer-h3">Localização</h3>
+
+                    <div>
+                        <p class="footer-info">Recife, Pernambuco</p>
+                        <!-- <p class="footer-info">CEP: 52050-280</p> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Linha divisória -->
+            <div id="footer-linha-divisoria"></div>
+
+            <!-- Segunda parte -->
+            <section class="footer-sec" id="footer-sec2">
+                <a href="https://www.instagram.com/visz.dev/" target="_blank">
+                    <p class="footer-copy">&copy; 2024 Visz, Inc.</p>
+                </a>
+
+                <div class="footer-redes-sociais">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/visz.dev/" target="_blank">
+                        <img src="IMG/instagram.png" class="footer-icon" alt="imagem do logo do Instagram">
+                    </a>
+                </div>
+            </section>
+        </footer>
+
+    </section>
 
 
 

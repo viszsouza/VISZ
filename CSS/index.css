@@ -2,6 +2,7 @@
 
 /* Inicio */
 header {
+    width: 100%;
     background: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 0, 0, 0)), url('/IMG/HeaderBackground.jpg');
     background-repeat: no-repeat;
     background-position: center right;
@@ -110,6 +111,7 @@ header {
 
 /* O Problema */
 .problem {
+    width: 100%;
     background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
         linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
         url('/IMG/BackgroundProblem.jpg');
@@ -201,6 +203,7 @@ header {
 /* A Solução */
 
 .soluctions {
+    width: 100%;
     background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0)),
         linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0)),
         url('/IMG/HeaderBackground.jpg');
@@ -329,6 +332,7 @@ header {
 /* Aprender */
 
 .aprender {
+    width: 100%;
     background: var(--preto);
     background-repeat: no-repeat;
     background-position: center center;
@@ -488,7 +492,8 @@ header {
 
 /* Como funciona o método */
 
-.como-funciona{
+.como-funciona {
+    width: 100%;
     background: linear-gradient(to bottom, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0)),
         linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0)),
         url('/IMG/HeaderBackground.jpg');
@@ -503,7 +508,7 @@ header {
     gap: 40px;
 }
 
-.como-funciona-img{
+.como-funciona-img {
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -551,7 +556,7 @@ header {
     margin-right: 10px;
 }
 
-.como-funciona-text  .como-funciona-item p {
+.como-funciona-text .como-funciona-item p {
     font-family: "Montserrat", sans-serif;
     color: var(--branco);
     font-weight: 300;
@@ -562,7 +567,7 @@ header {
     text-shadow: 1px 1px 15px var(--preto);
 }
 
-.como-funciona-text p{
+.como-funciona-text p {
     font-family: "Montserrat", sans-serif;
     color: var(--vermelhoPadrao);
     font-weight: 300;
@@ -573,7 +578,7 @@ header {
     text-shadow: 1px 1px 15px var(--preto);
 }
 
-.como-funciona-text p span{
+.como-funciona-text p span {
     background: var(--gradienteVermelho);
     color: var(--branco);
     font-weight: 600;
@@ -581,7 +586,8 @@ header {
 
 /* Who */
 
-.who{
+.who {
+    width: 100%;
     background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
         linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
         url('/IMG/BackgroundProblem.jpg');
@@ -614,7 +620,7 @@ header {
     gap: 40px;
 }
 
-.who-item{
+.who-item {
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -627,7 +633,7 @@ header {
     box-shadow: var(--shadowVermelha);
 }
 
-.who-persona{
+.who-persona {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -655,3 +661,246 @@ header {
     max-width: 50px;
     border-radius: 100%;
 }
+
+/* CTA / Footer */
+.cta-footer {
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
+        linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)),
+        url('/IMG/HeaderBackground.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 80px;
+    gap: 20px;
+    max-width: 900px;
+}
+
+.cta h1 {
+    font-family: "TAM", sans-serif;
+    color: var(--branco);
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cta p {
+    font-family: "Montserrat", sans-serif;
+    color: var(--branco);
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cta button {
+    padding: 15px 30px;
+    background: var(--gradienteVermelho);
+    color: var(--branco);
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    transition: 300ms;
+}
+
+.cta button:hover {
+    transform: scale(0.95);
+}
+
+.cta button img {
+    width: 30px;
+}
+
+/* Medias Query's */
+
+@media (max-width: 1200px) {
+
+    /* Inicio */
+    header {
+        padding: 20px 40px;
+    }
+
+    .container-header {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .container-inicio {
+        margin-top: 40px;
+        height: auto;
+        gap: 20px;
+    }
+
+    .container-inicio h1 {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .container-inicio p {
+        width: 100%;
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    /* O Problema */
+
+    .problem {
+        padding: 20px 40px;
+    }
+
+    .problem h1 {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .container-problem {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .problem-text h1 {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .problem-text p {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* A Solução */
+
+    .soluctions {
+        padding: 20px 40px;
+    }
+
+    .soluctions h1 {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .soluctions p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .container-soluctions {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .item-soluctions {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    /* Aprender */
+
+    .aprender {
+        padding: 20px 40px;
+    }
+
+    .aprender h1 {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    /* Como funciona */
+
+    .como-funciona {
+        padding: 20px 40px;
+        flex-direction: column;
+    }
+
+    .como-funciona h1 {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .como-funciona-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .como-funciona-text h3 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .como-funciona-text p {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* Who */
+
+    .who {
+        padding: 20px 40px;
+    }
+
+    .who h1 {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .container-who {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .item-soluctions {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    /* fade base */
+    .carousel-fade::before,
+    .carousel-fade::after {
+        display: none;
+    }
+
+    /* esquerda */
+    .carousel-fade::before {
+        display: none;
+    }
+
+    /* direita */
+    .carousel-fade::after {
+        display: none;
+    }
+}
+

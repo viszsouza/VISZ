@@ -347,8 +347,8 @@ nav{
 
 /* Footer */
 footer{
+    width: 100%;
     padding: 60px 40px 30px 60px;
-    background-color: var(--bege);
 }
 /* Primeira parte */
 .footer-sec{
@@ -367,9 +367,10 @@ footer{
 .footer-h3{
     font-size: 24px;
     font-weight: bold;
-    color: var(--azul);
+    color: var(--branco);
 
-    font-family: "Playfair Display", serif;
+    font-family: 'TAM', sans-serif;
+    text-transform: uppercase;
     font-weight: 200;
 }
 
@@ -382,16 +383,16 @@ footer{
 .footer-info{
     font-size: 16px;
     font-weight: 400;
-    color: var(--azul);
+    color: var(--branco);
 
-    font-family: "Poppins", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Linha divisória */
 #footer-linha-divisoria{
     width: 100%;
     height: 1px;
-    background-color: var(--verde);
+    background-color: var(--vermelhoPadrao);
     margin: 60px 0 30px 0;
 }
 
@@ -399,14 +400,14 @@ footer{
 .footer-copy{
     font-size: 14px;
     font-weight: 500;
-    color: var(--verde);
+    color: var(--vermelhoPadrao);
     transition: 300ms;
 
-    font-family: "Poppins", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .footer-copy:hover{
-    color: var(--preto);
+    color: var(--branco);
 }
 
 .footer-redes-sociais{
